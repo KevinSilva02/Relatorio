@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    width: 100%
+}
+label {
+    margin-right: 2px;
+}
+
+
+#cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+#icone {
+    heigth: 50px;
+    width: 50px;
+}
+
+#info {
+    border: solid 1px black;
+}
+
+#row1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+#campo, #campo1 {
+    border: solid 1px black;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+}
+
+#row2, #row5, #row6 {
+    display: flex;
+    align-items: center;
+}
+
+#row3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#campoResumo {
+    display: flex;
+    align-itens: start;
+    justify-content: start;
+    padding: 10px;
+    height: 250px;
+    border: solid 1px black;
+}
+
+button {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  margin: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+}
+button:hover {
+  background-color: green; 
+  color: white;
+  cursor: pointer;
+}
+
+#butao {
+    display: flex;
+    justify-content: center
+}
+
+@media (max-width: 799px) {
+    #resumo {
+        width: 600px;
+    }
+}
+
+@media (max-width: 477px) {
+    #main {
+        margin: 10px;
+    }
+    #row1 {
+        display: block
+    }
+    #campo1{
+        width: 95%
+    }
+    #resumo {
+        width: 350px;
+    }
+}

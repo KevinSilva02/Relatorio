@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="relatorio.css" type="text/css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="main-pdf">
+        <div id="cabecalho">
+            <img id="icone" src="icon(4).png" alt="icone">
+            <h1 id="title">Acolhedores</h1>
+            <img id="icone" src="icon(4).png" alt="icone">
+        </div>
+        <div id="info">
+            <div id="row1">
+                <div id="campo1">
+                    <label for="palavra">Palavra: </label>
+                    Atos 10 
+                    
+                </div>
+                <div id="campo1">
+                    <label for="inicio">Inicio: </label>
+                    18:20
+                </div>
+                <div id="campo1">
+                    <label for="fim">Fim: </label>
+                    20:00
+                </div>
+                <div id="campo1">
+                    <label for="data">Data: </label>
+                    12/03/2017
+                </div>
+        </div>
+            <div id="row2">
+                <div id="campo">
+                    <label for="endereço">Endereço: </label>
+                    Rua Qualquer
+                </div>
+            </div>
+            <div id="row3">
+                <div id="campo">
+                    <label for="responsavel">Responsavel: </label>
+                    Fulano
+                </div>
+                <div id="campo">
+                    <label for="louvores">Louvores: </label>
+                    
+                </div>
+            </div>
+            <div id="row4">
+                <div id="campoResumo">
+                    <label for="Resumo">Resumo: </label>
+                    um resumo muito bom
+                </div>
+            </div>
+            <div id="row5">
+                <div id="campo">
+                    <label for="casa">Membros da casa: </label>
+                    moradores
+                </div>
+            </div>
+            <div id="row6">
+                <div id="campo">
+                    <label for="acolhedores">Acolhedores: </label>
+                    membros dos acolhedores
+                </div>
+            </div>
+        </div>
+        <div id="butao">
+            <button id="#generate-pdf" >Gerar PDF</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="main-pdf">
+        <div id="cabecalho">
+            <img id="icone" src="icon(4).png" alt="icone">
+            <h1 id="title">Acolhedores</h1>
+            <img id="icone" src="icon(4).png" alt="icone">
+        </div>
+        <div id="info">
+            <div id="row1">
+                <div id="campo1">
+                    <label for="inicio">Inicio: </label>
+                    <div id="divInicio"></div>
+                </div>
+                <div id="campo1">
+                    <label for="fim">Fim: </label>
+                    <div id="divFim"></div>
+                </div>
+                <div id="campo1">
+                    <label for="data">Data: </label>
+                    <div id="divData"></div>
+                </div>
+            </div>
+            <div id="row3">
+                <div id="campo1">
+                    <label for="palavra">Palavra: </label>
+                    <div id="divPalavra"></div>                
+                </div>
+            </div>    
+            <div id="row2">
+                <div id="campo">
+                    <label for="endereço">Endereço: </label>
+                    <div id="divEnd"></div>
+                </div>
+            </div>
+            <div id="row3">
+                <div id="campo">
+                    <label for="responsavel">Responsavel: </label>
+                    <div id="divResponsavel"></div>
+                </div>
+            </div>
+            <div id="row3">
+                <div id="campo">
+                    <label for="louvores">Louvores: </label>
+                    <div id="divLouvor"></div>
+                </div>
+            </div>
+            <div id="row4">
+                <div id="campoResumo-pdf"> 
+                    <div id="divResumo"></div>
+                </div>    
+            </div>
+            <div id="row5">
+                <div id="campo">
+                    <label for="casa">Membros da casa: </label>
+                    <div id="divMembros"></div>
+                </div>
+            </div>
+            <div id="row6">
+                <div id="campo">
+                    <label for="acolhedores">Acolhedores: </label>
+                    <div id="divAcolhedores"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="main">
+        <div id="cabecalho">
+            <img id="icone" src="icon(4).png" alt="icone">
+            <h1 id="title">Acolhedores</h1>
+            <img id="icone" src="icon(4).png" alt="icone">
+        </div>
+        <div id="info">
+            <div id="row1">
+                <div id="campo1">
+                    <label for="palavra">Palavra: </label>
+                    <input type="text" id="palavra">
+                    
+                </div>
+                <div id="campo1">
+                    <label for="inicio">Inicio: </label>
+                    <input type="text" id="inicio">
+                </div>
+                <div id="campo1">
+                    <label for="fim">Fim: </label>
+                    <input type="text" id="termino">
+                </div>
+                <div id="campo1">
+                    <label for="data">Data: </label>
+                    <input type="text" id="data">
+                </div>
+            </div>
+            <div id="row2">
+                <div id="campo">
+                    <label for="endereço">Endereço: </label>
+                    <input type="text" id="endereco">
+                </div>
+            </div>
+            <div id="row3">
+                <div id="campo">
+                    <label for="responsavel">Responsavel: </label>
+                    <input type="text" id="responsavel">
+                </div>
+                <div id="campo">
+                    <label for="louvores">Louvores: </label>
+                    <input type="text" id="louvores">
+                </div>
+            </div>
+            <div id="row4">
+                <div id="campoResumo">
+                    <label for="Resumo">Resumo: </label>
+                    <textarea name="resumo" id="resumo" cols="20" rows="10"></textarea>
+                </div>
+            </div>
+            <div id="row5">
+                <div id="campo">
+                    <label for="casa">Membros da casa</label>
+                    <input type="text" id="membros">
+                </div>
+            </div>
+            <div id="row6">
+                <div id="campo">
+                    <label for="acolhedores">Acolhedores</label>
+                    <input type="text" id="acolhedores">
+                </div>
+            </div>
+        </div>
+        <div id="butao">
+            <button id="#generate-pdf">Gerar PDF</button>
+        </div>
+    </div>
+</body>
+</html>
