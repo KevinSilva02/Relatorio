@@ -1,7 +1,22 @@
 const btnGenerate = document.getElementById("#generate-pdf")
 
+function limpaInput() {
+    palavra.value = ""
+    inicio.value = ""
+    fim.value = ""
+    data.value = ""
+    endereco.value = ""
+    responsavel.value = ""
+    louvores.value = ""
+    resumo.value = ""
+    membros.value = ""
+    acolhedores.value = ""
+
+}
+
 btnGenerate.addEventListener("click", () => {
-    
+
+
     const divPalavra = document.querySelector('#divPalavra')
     const divInicio = document.querySelector('#divInicio')
     const divFim = document.querySelector('#divFim')
@@ -17,7 +32,7 @@ btnGenerate.addEventListener("click", () => {
     
     const palavra = document.querySelector('#palavra')
     const inicio = document.querySelector('#inicio')
-    const fim = document.querySelector('#termino')
+    const fim = document.querySelector('#fim')
     const data = document.querySelector('#data')
     const endereco = document.querySelector('#endereco')
     const responsavel = document.querySelector('#responsavel')
@@ -56,7 +71,7 @@ btnGenerate.addEventListener("click", () => {
     content.className = 'show'
     
     setTimeout(function(){content.className = content.className.replace('show','main-pdf');}, 1000)
-
+    
     const options = {
         margin: [10, 10, 10, 10],
         filename: "Relatorio.pdf",
@@ -66,7 +81,11 @@ btnGenerate.addEventListener("click", () => {
     
     
     html2pdf().set(options).from(content).save();
-
+    
+    limpaInput()
+    
+    setTimeout(function(){location.reload()}, 2000)
+    
     
 })
 
