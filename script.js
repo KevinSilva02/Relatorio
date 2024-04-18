@@ -1,4 +1,6 @@
 const btnGenerate = document.getElementById("#generate-pdf")
+const btnEdit = document.getElementById("#edit")
+const btnPdf = document.getElementById("#pdf")
 
 function limpaInput() {
     palavra.value = ""
@@ -15,7 +17,7 @@ function limpaInput() {
 }
 
 btnGenerate.addEventListener("click", () => {
-
+    
 
     const divPalavra = document.querySelector('#divPalavra')
     const divInicio = document.querySelector('#divInicio')
@@ -54,6 +56,7 @@ btnGenerate.addEventListener("click", () => {
     const contAcolhedores = document.createTextNode(acolhedores.value)
     
     
+
     divPalavra.appendChild(contPalavra)
     divInicio.appendChild(contInicio)
     divFim.appendChild(contFim)
@@ -65,12 +68,20 @@ btnGenerate.addEventListener("click", () => {
     divCasa.appendChild(contCasa)
     divAco.appendChild(contAcolhedores)
 
+    
+
     const content = document.querySelector('.main-pdf')
-    console.log(content)
+    
+
+    const cont = document.querySelector('.main')
+
+    cont.className = 'main-pdf'
+
+    
 
     content.className = 'show'
     
-    setTimeout(function(){content.className = content.className.replace('show','main-pdf');}, 1000)
+
     
     const options = {
         margin: [10, 10, 10, 10],
@@ -80,13 +91,30 @@ btnGenerate.addEventListener("click", () => {
     }
     
     
+    //html2pdf().set(options).from(content).save();
+    
+    //limpaInput()
+    
+    //setTimeout(function(){location.reload()}, 2000)
+    
+    
+})
+
+btnEdit.addEventListener("click",() => {
+    location.reload()
+})
+
+btnPdf.addEventListener("click", () => {
+    const content = document.querySelector('.show')
+
+    const options = {
+        margin: [10, 10, 10, 10],
+        filename: "Relatorio.pdf",
+        html2canvas: {scale: 2},
+        jsPDF: {unit: 'mm', format: "a4", orientation: 'portrait'}
+    }
+
     html2pdf().set(options).from(content).save();
-    
-    limpaInput()
-    
-    setTimeout(function(){location.reload()}, 2000)
-    
-    
 })
 
 

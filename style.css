@@ -20,7 +20,11 @@ label {
     border: solid 2px black;
 }
 .show {
-    
+    margin-top: -25px;
+    margin: 30px;
+    border: solid 2px black;
+}
+.mpdf {
     margin: 30px;
     border: solid 2px black;
 }
