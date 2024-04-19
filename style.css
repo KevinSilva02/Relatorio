@@ -20,7 +20,7 @@ label {
     border: solid 2px black;
 }
 .show {
-    
+    position: sticky;
     margin: 30px;
     border: solid 2px black;
 }
@@ -77,7 +77,7 @@ label {
 }
 
 #resumo {
-    width: 1000%;
+    width: 100%;
 }
 
 #campoResumo-pdf {
@@ -87,6 +87,7 @@ label {
     padding: 10px;
     height: 550px;
     border: solid 1px black;
+    max-width: 98%;
 }
 
 button {
@@ -130,9 +131,6 @@ button:hover {
     }
     #resumo {
         width: 350px;
-    }
-    #campoResumo-pdf {
-        height: 350px;
     }
     #divResumo {
         width: 100$;

@@ -84,9 +84,10 @@ btnGenerate.addEventListener("click", () => {
     
     limpaInput()
     
-    setTimeout(function(){location.reload()}, 2000)
+    
     
     
 })
+
 
 
